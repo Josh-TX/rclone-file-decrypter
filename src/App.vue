@@ -52,8 +52,11 @@ function formatFileSize(size: number) {
 </script>
 
 <template>
-    <div>
-        <h3>Rclone File Decrypter</h3>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin: 4px 0 8px 0;">
+        <h3 style="margin: 0;">Rclone File Decrypter</h3>
+        <small class="text-muted">
+            <a href="https://github.com/Josh-TX/rclone-file-decrypter">github</a> | Created by Josh TX
+        </small>
     </div>
     <FileDropComponent @filesAdded="handleFilesAdded" />
     <div class="input-container">
